@@ -6,7 +6,7 @@ const Bar = () => {
   return (
     <Box m="20px">
       <Header title="Overview" subtitle="Monthly Earnings" />
-      <Box height="25vh">
+      <Box height="34vh">
         <BarChart />
       </Box>
     </Box>

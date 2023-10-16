@@ -45,7 +45,7 @@ const SideBar= ()=>{
             height:"100vh",
             position: "fixed",
             background:colors.blue[500],
-            
+            zIndex:"100"
             }}>
             <Sidebar
                 backgroundColor= {colors.blue[500]} padding={4} >
@@ -78,7 +78,7 @@ const SideBar= ()=>{
                         <Item
                             
                             title="Dashboard"
-                            to="/"
+                            to="/react-dashboard"
                             icon={<SpaceDashboardOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
@@ -128,7 +128,7 @@ const SideBar= ()=>{
                                         alt="profile-user"
                                         width="40px"
                                         height="40px"
-                                        src={`../../assets/user.png`}
+                                        src={`../../public/assets/user.png`}
                                         style={{ cursor: "pointer", borderRadius: "50%" }}
                                         />>
                             

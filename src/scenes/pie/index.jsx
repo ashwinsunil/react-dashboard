@@ -1,19 +1,21 @@
-import { Box, useTheme } from "@mui/material";
+import { Box} from "@mui/material";
 import Header from "../../components/Header";
 import PieChart from "../../components/Piechart";
-import { tokens } from "../../theme";
 
 const Pie = () => {
-  const theme = useTheme();
-  const colors = tokens(theme.palette.mode);
+
+
   return (
     <Box >
       
-      <Box height="25vh" >
-      <Header title="Customers" subtitle="Customers that buy products" />
-        <PieChart />
-      <Header title="65%" subtitle="New Customers"/>
-              
+      <Box height="25vh" padding={1} >
+        <Header title="Customers" subtitle="Customers that buy products" />
+          <PieChart />
+        <Box sx={{
+          textAlign: "center"
+        }}>
+          <Header  title="65%" subtitle="New Customers"/>
+        </Box>    
       </Box>
     </Box>
   );

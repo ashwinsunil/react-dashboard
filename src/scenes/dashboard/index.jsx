@@ -19,8 +19,8 @@ const Dashboard= ()=>{
     
     return (
         <Grid container marginLeft="249px">
-            <Grid container>
-                <Grid item xs={12}>
+            <Grid container  zIndex="0">
+                <Grid item overflow="hidden" xs={12}>
                     <Topbar/>
                 </Grid>
             </Grid>
@@ -72,8 +72,8 @@ const Dashboard= ()=>{
             </Grid>
             
             <Grid  container spacing={1} display="flex" position="relative" marginLeft="16px" >
-                <Grid paddingBottom="20px" item xs={12} md={7} borderRadius="2%"   backgroundColor={colors.grey[100]} marginRight="15px" marginBottom="15px">
-                    <Bar />
+                <Grid  height="350px" overflow="auto" item xs={12} md={7} borderRadius="2%"   backgroundColor={colors.grey[100]} marginRight="15px" marginBottom="15px">
+                    <Bar/>
                 </Grid>
                 <Grid  item xs={12} overflow="auto" md={3.9} borderRadius="2%"  backgroundColor={colors.grey[100]}>
                     <Pie/>
@@ -81,7 +81,8 @@ const Dashboard= ()=>{
             </Grid>
             <Grid container>
                 <Grid item xs={11} backgroundColor={colors.grey[100]} sx={{
-                    margin: "20px 20px 20px 20px"
+                    margin: "20px 20px 20px 20px",
+                    borderRadius: "2%"
                 }}>
                     <Product/>
                 </Grid>

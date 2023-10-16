@@ -3,133 +3,52 @@
 export const mockDataTeam = [
   {
     id:1,
-    name: "Jon Snow",
+    name: "3D animation",
     Stock: "10 in stock",
     Price: "$42.99",
     TotalSales: 20
   },
   {
     id:2,
-    name: "Jon Snow",
-    Stock: "10 in stock",
-    Price: "$42.99",
+    name: "New Product",
+    Stock: "9 in stock",
+    Price: "$45.99",
     TotalSales: 20
   },{
     id:3,
-    name: "Jon Snow",
-    Stock: "10 in stock",
-    Price: "$42.99",
+    name: "Software Subscription services",
+    Stock: "1 in stock",
+    Price: "$12.99",
     TotalSales: 20
   },{
     id:4,
-    name: "Jon Snow",
-    Stock: "10 in stock",
-    Price: "$42.99",
+    name: "Automation servies",
+    Stock: "11 in stock",
+    Price: "$142.99",
     TotalSales: 20
   },{
     id:5,
-    name: "Jon Snow",
-    Stock: "10 in stock",
-    Price: "$42.99",
+    name: "AI device Manager",
+    Stock: "100 in stock",
+    Price: "$1142.99",
     TotalSales: 20
   },{
     id:6,
-    name: "Jon Snow",
-    Stock: "10 in stock",
-    Price: "$42.99",
+    name: "Amazefit product",
+    Stock: "15 in stock",
+    Price: "$2.99",
     TotalSales: 20
   },
-];
-
-export const mockDataContacts = [
-  {
-    id: 1,
-    name: "Jon Snow",
-    email: "jonsnow@gmail.com",
-    age: 35,
-    phone: "(665)121-5454",
-    address: "0912 Won Street, Alabama, SY 10001",
-    city: "New York",
-    zipCode: "10001",
-    registrarId: 123512,
-  },
-  {
-    id: 2,
-    name: "Cersei Lannister",
-    email: "cerseilannister@gmail.com",
-    age: 42,
-    phone: "(421)314-2288",
-    address: "1234 Main Street, New York, NY 10001",
-    city: "New York",
-    zipCode: "13151",
-    registrarId: 123512,
-  },
-  {
-    id: 3,
-    name: "Jaime Lannister",
-    email: "jaimelannister@gmail.com",
-    age: 45,
-    phone: "(422)982-6739",
-    address: "3333 Want Blvd, Estanza, NAY 42125",
-    city: "New York",
-    zipCode: "87281",
-    registrarId: 4132513,
-  },
-  {
-    id: 4,
-    name: "Anya Stark",
-    email: "anyastark@gmail.com",
-    age: 16,
-    phone: "(921)425-6742",
-    address: "1514 Main Street, New York, NY 22298",
-    city: "New York",
-    zipCode: "15551",
-    registrarId: 123512,
-  },
-  {
-    id: 5,
-    name: "Daenerys Targaryen",
-    email: "daenerystargaryen@gmail.com",
-    age: 31,
-    phone: "(421)445-1189",
-    address: "11122 Welping Ave, Tenting, CD 21321",
-    city: "Tenting",
-    zipCode: "14215",
-    registrarId: 123512,
-  },
-  {
-    id: 6,
-    name: "Ever Melisandre",
-    email: "evermelisandre@gmail.com",
-    age: 150,
-    phone: "(232)545-6483",
-    address: "1234 Canvile Street, Esvazark, NY 10001",
-    city: "Esvazark",
-    zipCode: "10001",
-    registrarId: 123512,
-  },
-  {
-    id: 7,
-    name: "Ferrara Clifford",
-    email: "ferraraclifford@gmail.com",
-    age: 44,
-    phone: "(543)124-0123",
-    address: "22215 Super Street, Everting, ZO 515234",
-    city: "Evertin",
-    zipCode: "51523",
-    registrarId: 123512,
-  },
-  
 ];
 
 export const mockBarData = [
   {
     month: "Jan",
-    "sales": 100,
+    "sales": 60,
   },
   {
     month: "Feb",
-    "sales": 100,
+    "sales": 80,
   },
   {
     month: "March",
@@ -137,19 +56,19 @@ export const mockBarData = [
   },
   {
     month: "April",
-    "sales": 100,
+    "sales": 20,
   },
   {
     month: "May",
-    "sales": 100,
+    "sales": 40,
   },
   {
     month: "June",
-    "sales": 100,
+    "sales": 70,
   },
   {
     month: "July",
-    "sales": 100,
+    "sales": 60,
   },
   {
     month: "Aug",
@@ -159,18 +78,7 @@ export const mockBarData = [
     month: "Sep",
     "sales": 100,
   },
-  {
-    month: "Oct",
-    "sales": 100,
-  },
-  {
-    month: "Nov",
-    "sales": 100,
-  },
-  {
-    month: "Dec",
-    "sales": 100,
-  },
+  
   
 
 ];
@@ -178,19 +86,19 @@ export const mockBarData = [
 export const mockPieData = [
   {
     id: "New Customers",
-    //label: "hack",
+    
     value: 65,
     color: "hsl(104, 70%, 50%)",
   },
   {
     id: "old Customers",
-    //label: "make",
+    
     value: 20,
     color: "hsl(162, 70%, 50%)",
   },
   {
-    id: "go",
-    //label: "go",
+    id: "",
+
     value: 15,
     color: "hsl(291, 70%, 50%)",
   },

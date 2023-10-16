@@ -1,11 +1,27 @@
-import { Box, useTheme, IconButton, InputBase } from "@mui/material";
-import { DataGrid } from "@mui/x-data-grid";
+import { Box, useTheme} from "@mui/material";
+import { DataGrid, GridToolbarQuickFilter  } from "@mui/x-data-grid";
 import { tokens } from "../../theme";
 import { mockDataTeam } from "../../data/mockData";
 import Header from "../../components/Header";
-import SearchIcon from '@mui/icons-material/Search';
 
 const Product = () => {
+    function QuickSearchToolbar() {
+        return (
+          <Box
+            sx={{
+              background: colors.grey[400],
+              width: "20%",
+              p: 0.5,
+              pb: 0,
+              color:"black"
+              
+            }}
+          >
+            <GridToolbarQuickFilter sx={{text: "green"}} />
+          </Box>
+        );
+      }
+      
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const columns = [
@@ -45,12 +61,9 @@ const Product = () => {
                     display="flex" 
                     backgroundColor={colors.grey[400]} 
                     color={colors.grey[600]} 
-                    borderRadius="3px"   
+                    borderRadius="3px"
+                     
                 >
-                    <IconButton type="button">
-                        <SearchIcon sx={{color:colors.grey[900], mr:0}}/>
-                    </IconButton>
-                    <InputBase  sx={{ml: 2, flex:2, color:colors.grey[700]}} placeholder = "Search" />
                     
             </Box>
         </Box>
@@ -60,6 +73,9 @@ const Product = () => {
         m="40px 0 0 0"
         height="75vh"
         sx={{
+          background:colors.grey[100],
+          border: "none",
+          color:colors.grey[900],
           "& .MuiDataGrid-root": {
             border: "none",
             color: colors.grey[900]
@@ -69,6 +85,7 @@ const Product = () => {
             color: colors.grey[900]
           },
           "& .name-column--cell": {
+            border: "none",
             color: colors.grey[900],
           },
           "& .MuiDataGrid-columnHeaders": {
@@ -78,19 +95,26 @@ const Product = () => {
           },
           "& .MuiDataGrid-virtualScroller": {
             backgroundColor: colors.grey[100],
-            
+            border: "none",
           },
           "& .MuiDataGrid-footerContainer": {
-            borderBottom: "none",
+            
             backgroundColor: colors.grey[100],
+            border: "none",
             color: colors.grey[900]
           },
-          "& .MuiCheckbox-root": {
-            color: `${colors.greenAccent[200]} !important`,
-          },
+          "& .MuiInputBase-root":{
+            color:colors.grey[800]
+          }
+         
         }}
       >
-        <DataGrid  rows={mockDataTeam} columns={columns} />
+        <DataGrid title="Product Sell"
+            slots={{ toolbar: QuickSearchToolbar }}
+                disableColumnFilter
+                disableColumnSelector
+                disableDensitySelector
+                rows={mockDataTeam} columns={columns} />
       </Box>
     </Box>
   );
