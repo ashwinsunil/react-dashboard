@@ -20,7 +20,7 @@ function App() {
             
             <main className="content" style={{display:"flex"}} >
               <Routes >
-                <Route path="/" element={<Dashboard />} />
+                <Route path="/react-dashboard" element={<Dashboard />} />
                 
                 <Route path="/pie" element={<Pie />} />
               </Routes>
